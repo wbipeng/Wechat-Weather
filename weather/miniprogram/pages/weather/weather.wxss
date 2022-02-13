@@ -1,0 +1,101 @@
+.container {
+    height: 580rpx;
+    background-color: #3fca84;
+    color: #fff;
+    padding-top: 20rpx;
+    position: relative;
+  }
+  
+  .location {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 20rpx;
+  }
+  
+  .address {
+    text-align: center;
+  }
+  
+  /* 实况天气 */
+  .now-tem {
+    text-align: center;
+  }
+  
+  .now-tem-num {
+    font-size: 180rpx;
+  }
+  
+  .now-cond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .now-cond-icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 10rpx;
+  }
+  
+  .now-cond-txt {
+    font-size: 40rpx;
+  }
+  
+  .now-items {
+    display: flex;
+    justify-content: center;
+    margin: 20rpx;
+  }
+  
+  .now-items-left>view,
+  .now-items-right>view {
+    margin: 10rpx 20rpx;
+  }
+  
+  .now-items-left {
+    border-right: 1px solid #fff;
+    text-align: right;
+  }
+  
+  .now-time {
+    float: right;
+    margin-right: 40rpx;
+  }
+  
+  .lifestyle{
+    position: absolute;
+    width: 240rpx;
+    height: 80rpx;
+    background-color: #ccc;
+    color: #fff;
+    right: 0;
+    top: 100rpx;
+    text-align: center;
+    line-height: 80rpx;
+    border-radius: 40rpx 0 0 40rpx;
+  }
+  
+  /* 七天预报 */
+  .forecast-container{
+    text-align: center;
+    margin: 20rpx;
+    line-height: 2;
+  }
+  
+  .forecast-title{
+    border-bottom: 2rpx solid #ccc;
+    padding: 20rpx 0;
+  }
+  .forecast-icon{
+    width: 60rpx;
+    height: 60rpx;
+  }
+  .forecast-scroll{
+    overflow-x: scroll;
+  }
+  .forecast{
+    display: flex;
+    justify-content: space-around;
+    width: 1582rpx;
+    padding: 20rpx 0;
+  }

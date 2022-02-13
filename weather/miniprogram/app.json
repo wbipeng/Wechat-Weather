@@ -1,0 +1,36 @@
+{
+  "pages": [
+  "pages/weather/weather",
+  "pages/profile/profile",
+  "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3fca84",
+    "navigationBarTitleText": "天气预报早知道",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#3fca84",
+    "list": [{
+      "pagePath": "pages/weather/weather",
+      "text": "天气",
+      "iconPath": "images/weather.png",
+      "selectedIconPath": "images/weather-selected.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "images/profile.png",
+      "selectedIconPath": "images/profile-selected.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的显示效果"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<view class="lifestyle-container">
+  <view class="lifestyle-title">当天生活指数</view>
+  <view class="lifestyle">
+    <view class="lifestyle-item" wx:for="{{lifeStyle}}" wx:key="index">
+      <view>{{item.name}}：{{item.category}}</view>
+      <view class="lifestyle-item-text">{{item.text}}</view>
+    </view>
+  </view>
+
+</view>

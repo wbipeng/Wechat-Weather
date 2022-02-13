@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-3ggbhtpt5dceeb01 --n quickstartFunctions --r --project "C:\Users\wangb\Documents\腾讯小程序\weather" --report_first --report

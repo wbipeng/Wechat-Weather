@@ -1,0 +1,52 @@
+<view class="container">
+	<view class="address">
+		<image class="location" src="/images/location.png"></image>
+		<text>{{address}}</text>
+	</view>
+	<!-- 实况天气信息 -->
+	<view class="now">
+		<view class="now-tem">
+			<text class="now-tem-num">{{nowWeather.temp}}</text>
+			<text>°C</text>
+		</view>
+		<view class="now-cond">
+			<image class="now-cond-icon" src="{{nowWeather.condIcon}}"></image>
+			<text class="now-cond-txt">{{nowWeather.text}}</text>
+		</view>
+		<view class="now-items">
+			<view class="now-items-left">
+				<view>{{nowWeather.windDir}} {{nowWeather.windScale}}级</view>
+				<view>湿度 {{nowWeather.humidity}}</view>
+			</view>
+			<view class="now-items-right">
+				<view>大气压 {{nowWeather.pressure}}</view>
+				<view>降水量 {{nowWeather.precip}}</view>
+			</view>
+		</view>
+		<view class="now-time">
+			<text>{{nowWeather.updateTime}} 更新</text>
+		</view>
+		<view class="lifestyle" bindtap="goDetail">查看生活指数</view>
+
+	</view>
+
+</view>
+<view class="forecast-container">
+	<view class="forecast-title">七天预报</view>
+	<view class="forecast-scroll">
+		<view class="forecast">
+			<!-- 数组 -->
+			<view wx:for="{{forecastWeather}}" wx:key="index">
+				<view class="date">{{item.date}}</view>
+				<view>{{item.windDirDay}}{{item.windScaleDay}}级</view>
+				<view>{{item.textDay}}</view>
+				<image src="{{item.iconDay}}" class="forecast-icon"></image>
+				<view>{{item.tempMin}}°~{{item.tempMax}}</view>
+				<image src="{{item.iconNight}}" class="forecast-icon"></image>
+				<view>{{item.textNight}}</view>
+				<view>{{item.windDirNight}}{{item.windScaleNight}}级</view>
+			</view>
+		</view>
+
+	</view>
+</view>
